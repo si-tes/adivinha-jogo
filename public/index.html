@@ -321,7 +321,8 @@ function playTick() {
 }
 
 // ─── APP LOGIC ─────────────────────────────────────────────────────────────
-const WS_URL = `ws://${location.host}`;
+const WS_PROTOCOL = location.protocol === 'https:' ? 'wss:' : 'ws:';
+const WS_URL = `${WS_PROTOCOL}//${location.host}`;
 let ws, token = localStorage.getItem('adivinha_token'), playerName = localStorage.getItem('adivinha_name');
 let mode = null; // 'host_pvp' ou 'ranking'
 let pvpSelectedTime = 60;

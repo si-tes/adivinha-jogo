@@ -112,7 +112,8 @@
 <div class="toast" id="p-toast"></div>
 
 <script>
-const WS_URL = `ws://${location.host}`;
+const WS_PROTOCOL = location.protocol === 'https:' ? 'wss:' : 'ws:';
+const WS_URL = `${WS_PROTOCOL}//${location.host}`;
 let ws, token = localStorage.getItem('adivinha_token'), myName = localStorage.getItem('adivinha_name');
 let myScore = 0, answered = false, roundTime = 60, lastStatePhase = null;
 
