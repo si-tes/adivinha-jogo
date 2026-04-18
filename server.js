@@ -362,8 +362,9 @@ wss.on('connection', (ws) => {
       hostClient = ws;
       ws._role = 'host';
       resetPvPGame(); // Limpa a sala completamente (Regras 3 e 4)
-      QRCode.toDataURL(PLAYER_URL, { width: 256, margin: 1 }, (err, url) => {
-        sendToHost({ type: 'host_init', qrcode: err ? null : url, playerUrl: PLAYER_URL });
+      const targetUrl = msg.url || PLAYER_URL;
+      QRCode.toDataURL(targetUrl, { width: 256, margin: 1 }, (err, url) => {
+        sendToHost({ type: 'host_init', qrcode: err ? null : url, playerUrl: targetUrl });
       });
       return;
     }

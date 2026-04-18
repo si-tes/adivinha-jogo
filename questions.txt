@@ -1,30 +1,159 @@
-Cinema|Qual filme ganhou o Oscar de Melhor Filme em 1994?|Forrest Gump|Pulp Fiction|O Rei Leão|Um Sonho de Liberdade
-Cinema|Quem dirigiu o filme "A Origem" (Inception)?|Christopher Nolan|Steven Spielberg|Quentin Tarantino|Martin Scorsese
-História|Quem foi o primeiro presidente do Brasil?|Deodoro da Fonseca|Getúlio Vargas|Juscelino Kubitschek|Dom Pedro II
-História|Em que ano começou a Segunda Guerra Mundial?|1939|1914|1945|1929
-Ciência|Qual é o elemento químico mais abundante no universo?|Hidrogênio|Oxigênio|Carbono|Nitrogênio
-Ciência|Qual planeta é conhecido como o Planeta Vermelho?|Marte|Vênus|Júpiter|Saturno
-Geografia|Qual é o maior continente do mundo?|Ásia|África|América|Europa
-Geografia|Qual país tem a maior população do mundo?|Índia|China|Estados Unidos|Indonésia
-Música|Quem é conhecido como o "Rei do Pop"?|Michael Jackson|Elvis Presley|Prince|Freddie Mercury
-Música|Qual banda lançou o álbum "Abbey Road"?|The Beatles|Rolling Stones|Queen|Led Zeppelin
-Literatura|Quem escreveu "Dom Quixote"?|Miguel de Cervantes|William Shakespeare|Dante Alighieri|Gabriel García Márquez
-Literatura|Qual é o livro mais vendido de todos os tempos?|A Bíblia|Dom Quixote|O Pequeno Príncipe|Harry Potter
-Esportes|Quantas Copas do Mundo o Brasil já venceu?|5|4|6|3
-Esportes|Em qual esporte se usa uma raquete e uma peteca?|Badminton|Tênis|Squash|Ping-pong
-Tecnologia|Quem fundou a Microsoft?|Bill Gates|Steve Jobs|Mark Zuckerberg|Elon Musk
-Tecnologia|O que significa a sigla "WWW"?|World Wide Web|World Web Wide|Wide World Web|Web World Wide
-Arte|Quem pintou a "Monalisa"?|Leonardo da Vinci|Vincent van Gogh|Pablo Picasso|Michelangelo
-Arte|Qual estilo de arte é conhecido por suas formas geométricas quebradas?|Cubismo|Surrealismo|Impressionismo|Realismo
-Gerais|Qual é a moeda oficial do Japão?|Iene|Yuan|Won|Dólar
-Gerais|Quantos dias tem um ano bissexto?|366|365|364|367
-Cultura Nerd|Em "Matrix", qual a cor da pílula que o Neo toma?|Vermelha|Azul|Verde|Preta
-Cultura Nerd|Quem é o criador de "Star Wars"?|George Lucas|Steven Spielberg|J.J. Abrams|Ridley Scott
-Biologia|Qual o maior órgão do corpo humano?|Pele|Fígado|Cérebro|Coração
-Biologia|O que as plantas absorvem na fotossíntese?|Dióxido de Carbono|Oxigênio|Nitrogênio|Hidrogênio
-Mitologia|Quem é o deus grego dos mares?|Poseidon|Zeus|Hades|Apolo
-Mitologia|Qual criatura mítica renasce das próprias cinzas?|Fênix|Dragão|Grifo|Quimera
-Geografia|Qual é o menor país do mundo?|Vaticano|Mônaco|San Marino|Liechtenstein
-História|Onde foi assinada a Carta Magna em 1215?|Inglaterra|França|Roma|Espanha
-Astronomia|Qual é a galáxia mais próxima da Via Láctea?|Andrômeda|Sombrero|Triângulo|Centaurus A
-Entretenimento|Qual o nome do protagonista do jogo "The Legend of Zelda"?|Link|Zelda|Ganon|Mario
+# Cinema
+Qual filme ganhou o Oscar de Melhor Filme em 1994?
+Forrest Gump
+Pulp Fiction
+O Rei Leão
+Um Sonho de Liberdade
+A
+---
+# Cinema
+Quem dirigiu o filme "A Origem" (Inception)?
+Christopher Nolan
+Steven Spielberg
+Quentin Tarantino
+Martin Scorsese
+A
+---
+# História
+Quem foi o primeiro presidente do Brasil?
+Deodoro da Fonseca
+Getúlio Vargas
+Juscelino Kubitschek
+Dom Pedro II
+A
+---
+# História
+Em que ano começou a Segunda Guerra Mundial?
+1939
+1914
+1945
+1929
+A
+---
+# Ciência
+Qual é o elemento químico mais abundante no universo?
+Hidrogênio
+Oxigênio
+Carbono
+Nitrogênio
+A
+---
+# Ciência
+Qual planeta é conhecido como o Planeta Vermelho?
+Marte
+Vênus
+Júpiter
+Saturno
+A
+---
+# Geografia
+Qual é o maior continente do mundo?
+Ásia
+África
+América
+Europa
+A
+---
+# Geografia
+Qual país tem a maior população do mundo?
+Índia
+China
+Estados Unidos
+Indonésia
+A
+---
+# Música
+Quem é conhecido como o "Rei do Pop"?
+Michael Jackson
+Elvis Presley
+Prince
+Freddie Mercury
+A
+---
+# Música
+Qual banda lançou o álbum "Abbey Road"?
+The Beatles
+Rolling Stones
+Queen
+Led Zeppelin
+A
+---
+# Literatura
+Quem escreveu "Dom Quixote"?
+Miguel de Cervantes
+William Shakespeare
+Dante Alighieri
+Gabriel García Márquez
+A
+---
+# Esportes
+Quantas Copas do Mundo o Brasil já venceu?
+5
+4
+6
+3
+A
+---
+# Tecnologia
+Quem fundou a Microsoft?
+Bill Gates
+Steve Jobs
+Mark Zuckerberg
+Elon Musk
+A
+---
+# Arte
+Quem pintou a "Monalisa"?
+Leonardo da Vinci
+Vincent van Gogh
+Pablo Picasso
+Michelangelo
+A
+---
+# Gerais
+Quantos dias tem um ano bissexto?
+366
+365
+364
+367
+A
+---
+# Cultura Nerd
+Em "Matrix", qual a cor da pílula que o Neo toma?
+Vermelha
+Azul
+Verde
+Preta
+A
+---
+# Biologia
+Qual o maior órgão do corpo humano?
+Pele
+Fígado
+Cérebro
+Coração
+A
+---
+# Mitologia
+Quem é o deus grego dos mares?
+Poseidon
+Zeus
+Hades
+Apolo
+A
+---
+# Geografia
+Qual é o menor país do mundo?
+Vaticano
+Mônaco
+San Marino
+Liechtenstein
+A
+---
+# Astronomia
+Qual é a galáxia mais próxima da Via Láctea?
+Andrômeda
+Sombrero
+Triângulo
+Centaurus A
+A
