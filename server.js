@@ -201,6 +201,18 @@ function startPvPGame() {
   }, 1000);
 }
 
+function prepareQuestion(q) {
+  const options = [...q.options];
+  const shuffledOptions = shuffle(options);
+  const correctLetter = ['A','B','C','D'][shuffledOptions.indexOf(q.correctText)];
+  return {
+    theme: q.theme,
+    text: q.question,
+    options: shuffledOptions,
+    correct: correctLetter
+  };
+}
+
 function sendNextPvPQuestion(token) {
   const p = pvpState.players[token];
   if (!p) return;
@@ -213,14 +225,14 @@ function sendNextPvPQuestion(token) {
     return;
   }
 
-  p.currentQ = pvpState.shuffledQuestions[p.qIndex];
+  p.currentQ = prepareQuestion(pvpState.shuffledQuestions[p.qIndex]);
   
   if (p.ws && p.ws.readyState === WebSocket.OPEN) {
     p.ws.send(JSON.stringify({
       type: 'pvp_question',
       question: {
         theme: p.currentQ.theme,
-        text: p.currentQ.question,
+        text: p.currentQ.text,
         options: p.currentQ.options
       },
       score: p.score,
@@ -295,14 +307,14 @@ function sendNextRankingQuestion(token) {
     return;
   }
 
-  session.currentQ = session.questions[session.qIndex];
+  session.currentQ = prepareQuestion(session.questions[session.qIndex]);
   
   if (session.ws.readyState === WebSocket.OPEN) {
     session.ws.send(JSON.stringify({
       type: 'ranking_question',
       question: {
         theme: session.currentQ.theme,
-        text: session.currentQ.question,
+        text: session.currentQ.text,
         options: session.currentQ.options
       },
       score: session.score,
