@@ -202,9 +202,13 @@ function startPvPGame() {
 }
 
 function prepareQuestion(q) {
+  const originalIndex = ['A','B','C','D'].indexOf(q.correct);
+  const correctText = q.options[originalIndex];
+  
   const options = [...q.options];
   const shuffledOptions = shuffle(options);
-  const correctLetter = ['A','B','C','D'][shuffledOptions.indexOf(q.correctText)];
+  const correctLetter = ['A','B','C','D'][shuffledOptions.indexOf(correctText)];
+  
   return {
     theme: q.theme,
     text: q.question,
