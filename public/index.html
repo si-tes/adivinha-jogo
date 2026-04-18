@@ -118,6 +118,7 @@
 
 <!-- ════════════ MENU PRINCIPAL ════════════ -->
 <div id="screen-menu" class="page center fade-in">
+  <button id="btn-serious-mode" onclick="toggleSeriousMode()" style="position: absolute; top: 20px; right: 20px; background: transparent; border: none; font-size: 1.5rem; cursor: pointer; opacity: 0.3; transition: 0.3s;" title="Modo Apresentação (SENAI)">⚙️</button>
   <div class="host-root" style="text-align:center; max-width:700px;">
     <div style="font-size:3rem; margin-bottom:12px;">🎯</div>
     <h1 class="brand">Adivinha</h1>
@@ -251,11 +252,28 @@ const bgMusic = new Audio();
 bgMusic.loop = true;
 bgMusic.volume = 0.5;
 let isMusicPlaying = false;
+let isSeriousMode = false;
+let seriousBeatInterval = null;
+
+function toggleSeriousMode() {
+  isSeriousMode = !isSeriousMode;
+  document.getElementById('btn-serious-mode').style.opacity = isSeriousMode ? '1' : '0.3';
+  showToast(isSeriousMode ? 'Modo SENAI Ativado 🎓' : 'Modo Meme Ativado 🤪');
+}
 
 function startMusic() {
   if (isMusicPlaying) return;
   isMusicPlaying = true;
   
+  if (isSeriousMode) {
+    // Música séria de tensão feita com Web Audio API
+    seriousBeatInterval = setInterval(() => {
+      playTone(150, 'sine', 0.2, 0.1);
+      setTimeout(() => playTone(120, 'sine', 0.2, 0.1), 400);
+    }, 1000);
+    return;
+  }
+
   if (pvpSelectedTime === 120) {
     bgMusic.src = 'bg-music.mp3'; // Bololô
   } else if (pvpSelectedTime === 60) {
@@ -274,6 +292,10 @@ function startMusic() {
 function stopMusic() {
   isMusicPlaying = false;
   bgMusic.pause();
+  if (seriousBeatInterval) {
+    clearInterval(seriousBeatInterval);
+    seriousBeatInterval = null;
+  }
 }
 
 // ─── AUDIO SYSTEM (Web Audio API) ───────────────────────────────────────────
