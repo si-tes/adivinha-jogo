@@ -453,7 +453,8 @@ document.querySelectorAll('.time-btn').forEach(btn => btn.onclick = (e) => {
 document.getElementById('btn-create-pvp').onclick = () => {
   initAudio();
   mode = 'host_pvp';
-  ws.send(JSON.stringify({ type: 'host_register' }));
+  const playerUrl = location.protocol + '//' + location.host + '/player.html';
+  ws.send(JSON.stringify({ type: 'host_register', url: playerUrl }));
   ws.send(JSON.stringify({ type: 'set_time', time: pvpSelectedTime }));
   showScreen('lobby');
 };
@@ -463,7 +464,8 @@ document.getElementById('btn-start').onclick = () => {
 
 document.getElementById('btn-pvp-again').onclick = () => {
   stopMusic();
-  ws.send(JSON.stringify({ type: 'host_register' }));
+  const playerUrl = location.protocol + '//' + location.host + '/player.html';
+  ws.send(JSON.stringify({ type: 'host_register', url: playerUrl }));
   ws.send(JSON.stringify({ type: 'set_time', time: pvpSelectedTime }));
   showScreen('lobby');
 };
